@@ -1,26 +1,35 @@
+/*********************************************************************
+* camera class                               								*
+*                                                                    *
+* Version: 1.5                                                       *
+* Date:    25-07-2021                                                *
+* Author:  Dan Machado                                               *                                         *
+**********************************************************************/
 #ifndef FRAMERATE_H
 #define FRAMERATE_H
+
 #include <SFML/Graphics.hpp>
 #include <SFML/System/Time.hpp>
 
 class FrameRate
 {
-   private:
-      unsigned short FPS;    // Frame Per Seconds
-      double TPF; // Time Per Frame
-      sf::Clock clock;      
-      
    public:
-      FrameRate(int fps);
-      float operator()();
-      const double& tpf();
-      double reset();
+		FrameRate(int fps);
+		float operator()();
+		const double& tpf();
+		double reset();
+
+   private:
+		sf::Clock clock;
+		double TPF; // Time Per Frame
+		unsigned int FPS;    // Frame Per Seconds
+      
 };
 
 //-------------------------------------------------------------------
 
 inline FrameRate::FrameRate(int fps)
-          : FPS(fps), TPF(1.0/fps), clock()
+:clock(), TPF(1.0/fps), FPS(fps)
 {}
 
 //-------------------------------------------------------------------

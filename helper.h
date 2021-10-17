@@ -1,6 +1,6 @@
 #ifndef HELPER_H
 #define HELPER_H
-#include<cmath>
+#include <cmath>
 
 
 //###################################################################
@@ -11,8 +11,10 @@
 const int WINDOW_WIDTH=800;
 const int WINDOW_HEIGHT=800;
 
-const float PX_CM=37.795238;
+const double D_WINDOW_WIDTH=800.0;
+const double D_WINDOW_HEIGHT=800.0;
 
+const double PX_CM=37.795238;
 const double SL=300.0;
 
 //###################################################################
