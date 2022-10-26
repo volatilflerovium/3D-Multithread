@@ -6,6 +6,6 @@ Commments:
 - Thread synchronization via Master class
 
 
-Video [here](http://46.32.229.68/img/3DM.html)
+Video [here](http://103.102.44.126/img/3DM.html)
 
-![Example](http://46.32.229.68/img/3DM.png)
+![Example](http://103.102.44.126/img/3DM.png)
