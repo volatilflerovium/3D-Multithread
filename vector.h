@@ -511,7 +511,6 @@ void Rotation<D>::setup(Vect<D> rotationAxe){
 		m_p1=p.normalize();
 		Vect<D> vp=W.normalize();
 		m_p2=sin(m_rad)*vp+cos(m_rad)*m_p1;
-		//Let's be honest... you do not understand this.... :-D
 	}
 	else{		
 		m_p1=Vect<D>{1, 0};
